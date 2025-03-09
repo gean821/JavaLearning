@@ -1,0 +1,15 @@
+version : '2.4'
+services:
+  db:
+    image : mysql:latest #especifica a versao do sql
+    container_name: meu_sql
+    environment: #variaveis de ambiente.
+      MYSQL_ROOT_PASSWORD : root    #senha do usuario (obrigatorio)
+    ports:
+      - "3306:3306"  # Porta do MySQL
+    volumes:
+      - gean_data:/var/lib/mysql  # Persistência dos dados
+
+volumes :
+  gean_data:    # Criação do volume para armazenar os dados do banco
+

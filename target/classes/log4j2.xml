@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{1.} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Definindo o nível INFO para o pacote específico onde você quer ver os logs -->
+        <Logger name="IntroducaoJava.Jdbc.repository" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+
+        <!-- Configuração de raiz para WARN -->
+        <Root level="warn">
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>

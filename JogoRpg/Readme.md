@@ -1,3 +1,8 @@
+Dados do aluno:
+nome: Gean Luca Costa Ramos
+Ra: 24463804-2
+repositório: https://github.com/gean821/JavaLearning/tree/main/JogoRpg
+
 # ⚔️ Jogo RPG por Turnos - Spring Boot
 
 Este projeto é um **jogo de RPG por turnos** desenvolvido em **Spring Boot**, onde o jogador enfrenta inimigos aleatórios realizando ações de **ataque** ou **cura**.  
